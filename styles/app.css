@@ -1,0 +1,105 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+     /* Add app styles here */
+}
+
+.rotate-parent {
+  width: 50px;
+  min-height: 250px;
+}
+
+.rotate {
+  margin: auto 0;
+  text-align: right;
+  width: 300px;
+  position: absolute;
+  top: 180px;
+  right: -130px;
+  /*left: -123px;*/
+  font-size: 16px;
+
+     -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+       -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
+}
+
+.rotate-ie {
+  right: 0px;
+  left: 15px;
+  top: 50px;
+}
+
+.card {
+  text-align: center;
+  border: solid 1px #999;
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.initiative {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 1px 000;
+  width: 99%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-width: bold;
+}
+
+.initiative p {
+  text-align: left;
+}
+
+.story {
+  width: 150px;
+}
+
+/*
+.story.state-defined {
+  background-color: #F5F5F5 !important;
+}
+
+.story.state-in-progress {
+  background-color: #FCF8E3 !important;
+}
+
+.story.state-completed, .story.state-accepted {
+  background-color: #bff0b8 !important;
+}
+.story.state-released {
+  background-color: #D0D7FD !important;
+}
+*/
+
+.story.blocked {
+  border: solid 2px red;
+}
+
+.header {
+  text-align: center;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+.header .info {
+  font-size: 12px
+}

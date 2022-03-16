@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="X-RALLY-APP-VERSION" content="v1.1.0">
+    <title>{{name}}</title>
+
+    <script type="text/javascript"
+src="//rally1.rallydev.com/apps/{{{sdk}}}/sdk.js?wsapiVersion=1.43"></script>
+
+{{#remote_javascript}}
+    <script type="text/javascript" src="{{{.}}}"></script>
+{{/remote_javascript}}
+
+    <script type="text/javascript">
+        Rally.onReady(function () {
+{{{javascript}}}
+            
+            Rally.launchApp('{{className}}', {
+                name:"{{name}}",
+                parentRepos:"{{{parents}}}"
+            });
+
+        });
+    </script>
+
+
+{{#remote_css}}
+    <link rel="stylesheet" type="text/css" href="{{{.}}}">
+{{/remote_css}}
+
+    <style type="text/css" id="appCss">
+{{{css}}}
+    </style>
+
+</head>
+<body></body>
+</html>
